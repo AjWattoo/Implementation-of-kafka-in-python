@@ -86,7 +86,7 @@ In brower we have a beautiful GUI of kafka manager where we can easily manage an
 ## Run python script
 
 ```Python
-python aiven_excercise.py
+python kafka_code.py
 ```
 
 ## Run application test
