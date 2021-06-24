@@ -52,7 +52,9 @@ def consumer_func():
     df= pd.DataFrame.from_dict(data, orient='columns')
     print("total data")
     print(df)
-    engine=create_engine('postgres+psycopg2://avnadmin:e2g6lh35onw1lze8@testpostgres-wattoorocx-963f.aivencloud.com:16577/defaultdb')
+    engine=create_engine('postgres+psycopg2://postgres:0000@localhost:5432/data')
+    # In thes case postgres = name of my databse , 0000 is my password , localhost=host, port = 5432, data = database nam
+    
     con = engine.connect()
     df.to_sql('table2', engine)
 
